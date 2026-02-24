@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cửa hàng trang sức</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fffafc;
+            color: #333;
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #f8d7da;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #d63384;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #8b005d;
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .contact-info {
+            line-height: 1.8;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        💎 Cửa hàng trang sức 💎
+    </header>
+
+    <nav>
+        <a href="home.html">Trang chủ</a>
+        <a href="sanpham.html">Sản phẩm</a>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <strong>Thông tin liên hệ:</strong><br>
+            Họ tên: Võ Khánh Đăng<br>
+            Số điện thoại: 0123 456 789<br>
+            Địa chỉ: 123 Đường Ánh Kim, TP Hồ Chí Minh<br>
+            Email: lienhe@trangsuc.vn
+        </div>
+    </footer>
+
 </body>
 </html>
